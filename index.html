@@ -11,16 +11,42 @@
             font-size: 50px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+        .theme-icon{
+            width: 200px;
+            cursor: pointer;
+        }
+        .theme-icon1 {
+            width: 130px;
+            cursor: pointer;
+        }
+        .theme-dark {
+            background-color: black;
+            color: white;
+        }
+        .theme-light {
+            background-color: cornsilk;
+            color: black;
+        }
+        .active {
+           
+        }
+        .decs{
+            text-align: center;
+            font-size: 30px;
+        }
+
+
     </style>
 </head>
-<body>
+<body id="body">
     <div>
-        <img src="" class="theme-icon active" id="btn-dark" onclick="darkmode()" />
-
-        <img src="" class="theme-icon" id="btn-light" onclick="lightmode()" />
         <h1 class="heading">Dark and Light Mode</h1>
+        <img src="./img/img-dark.png" class="theme-icon active" id="img-dark" onclick="darkMode()" />
 
-        <p>Toggle Dark/Light Mode Click the button to toggle between dark and light mode for this page.</p>
+        <img src="./img/img-light.png" class="theme-icon1" id="img-light" onclick="lightMode()" />
+        
+
+        <p class="decs">Toggle Dark/Light Mode Click the button to toggle between dark and light mode for this page.</p>
     </div>
 
     <script>
